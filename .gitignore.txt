@@ -1,2 +1,0 @@
-# Ignore the following
-.DS_Store
