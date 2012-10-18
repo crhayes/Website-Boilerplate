@@ -23,7 +23,7 @@ class Export {
      * @param   resource    $resource   MySQL Resource
      * @param   string      $file_name  Name used to save file
      */
-    function csv_from_mysql_resource($resource, $file_name)
+    public static function csv_from_mysql_resource($resource, $file_name)
     {
         $output = "";
         $headers_printed = false;
@@ -64,7 +64,7 @@ class Export {
      * @param   array   $resource   MySQL result array
      * @param   string  $file_name  Name used to save file
      */
-    public function csv_from_mysql_array($resource, $file_name)
+    public static function csv_from_mysql_array($resource, $file_name)
     {
         $output .= Export::csv_headers($resource[0]);
 
